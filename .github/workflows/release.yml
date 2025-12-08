@@ -80,6 +80,6 @@ jobs:
       # Prepends a 'v' to the beginning (e.g. 'v1.2.3')
       - name: Create Release
         id: create-release
-        uses: issue-ops/releaser@v2
+        uses: issue-ops/releaser@v3
         with:
           tag: v${{ steps.tag-commit.outputs.version }}
