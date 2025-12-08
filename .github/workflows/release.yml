@@ -71,7 +71,7 @@ jobs:
       # Get the version and update the tags to use in the release
       - name: Tag Commit
         id: tag-commit
-        uses: issue-ops/semver@v2
+        uses: issue-ops/semver@v3
         with:
           manifest-path: package.json
           overwrite: ${{ github.event.inputs.tag_overwrite }}
